@@ -26,3 +26,5 @@ test:
 production:
   <<: *default
   database: moontodo
+  username: fqyhocyjjxctra
+  password: McwpLMUj2xzgQwa77dAv_W2Cmq
