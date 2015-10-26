@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-12">
+      <h1>Todos</h1>
+      <form>
+        <input id="new-todo" data-bind="value: newTaskText" placeholder="What needs to be done?"/>
+        <button class="primary" data-bind="click: addTask">Add</button>
+      </form>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <ul id="todo-list" databind="foreach: todos">
+        <li>
+          <div class="view">
+            <input class="todotext" data-bind="value: text"/>
+            <input type="checkbox" data-bind="checked: completed"/>
+            <input hidden data-bind="text: id"/>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
